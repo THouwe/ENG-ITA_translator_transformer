@@ -7,8 +7,12 @@ In natural language processing (NLP), **transformer models** are a type of neura
 Translator models work by learning to map a sentence in one language (the *source language*) to a corresponding sentence in another language (the *target language*). The transformer model is trained on a large dataset of sentence pairs in the source and target languages. During training, the model is presented with a *source sentence*, and its task is to predict the corresponding target sentence. The transformer model works by *encoding* the source sentence into a fixed-length vector representation, called the **context vector**, which contains information about the meaning of the entire sentence. The model then *decodes* the context vector into a target sentence by generating words one at a time. The model is trained to predict the n-th word in the target language from the source sentence (which became the context vector) and the words in the target sentence up to word n-1.
 
 
+
+
 ### The Project at a Glance.
-In this project we will build from scratch and train an English-to-Italian attention-based transformer translator. Not only do transformer models represent the state-of-the art in machine translation and other NLP tasks, but this project also provides the opportunity of discussing a huge set of concepts relevant for NLP. We will dive deep in many of these concepts and provide references for the curious reader to expand on related topics. To this end, this script can be considered a syllabus of recent NLP techniques. Specifically, the following topics will be covered
+In this project we will build from scratch and train an English-to-Italian attention-based transformer translator. Not only do transformer models represent the state-of-the art in machine translation and other NLP tasks, but this project also provides the opportunity of discussing a huge set of concepts relevant for NLP. We will dive deep in many of these concepts and provide references for the curious reader to expand on related topics. To this end, this script can be considered a syllabus of recent NLP techniques. Specifically, the following topics will be covered.
+
+
 
 
 ### Index.
@@ -48,7 +52,7 @@ I was able to re-create the transformer architecture described in [Vaswani et al
 
 Specifically, I implemented the transformer as follows:
 
-<img src="/section08_figure01_transformer.png" width="400" height="600">
+<img src="/section08_figure01_transformer.png" width="500" height="700">
 
 
 
@@ -58,15 +62,19 @@ Following training, I obtained a masked accuracy score (probability of predictin
 
 <img src="/section11_translated_06-to-10.JPG" width="300" height="300">
 
+<img src="/section11_translated_11-to-15.JPG" width="300" height="300">
 
+<img src="/section11_translated_16-to-20.JPG" width="300" height="300">
 
-
+I am now fine-tuning the parameters. Keep your eyes open for future developments!
 
 
 
 ### Working Environment.
 
 This tutorial was created using Python 3.9.15 and TensorFlow 2.10.
+
+
 
 
 ### Acknowledgements.
