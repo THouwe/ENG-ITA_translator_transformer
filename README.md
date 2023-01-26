@@ -56,7 +56,13 @@ Specifically, I implemented the transformer as follows:
 
 
 
-Following training, I obtained a masked accuracy score (probability of predicting the n-th target word) in the validation set of 83%. The result is not bad. Nevertheless, there is a lot of room for improvement. Here are some examples of translation in action:
+Following training, I obtained a masked accuracy score (probability of predicting the n-th target word) in the validation set of 83%. 
+
+<img src="/section10_figure01_model_accuracy.jpg" width="500" height="700">
+
+
+
+The result is not bad. Nevertheless, there is a lot of room for improvement. Here are some examples of translation in action:
 
 <img src="/section11_translated_01-to-05.JPG" width="300" height="300">
 
